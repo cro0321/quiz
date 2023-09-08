@@ -89,7 +89,8 @@ function Main({userName, ChangeEvent, quizList, quiz, selected, quizCnt}) {
                 {
                   typeSelect.map(el =>{
                     // quiz는 quizList가 아니라 원본임 오리지널 원본에서 filter을 할건데 el은 html css js el의 요소이고 e.type(html css js)와 같은걸 필터! 해준다. {}를 쓰게되면 return문을 적어줘야하고 그냥 필터만 써줄때는 return을 생략한다.
-                    return <option value={el} key={el}>{el}({quiz.filter(e=> el===e.type).length}문제)</option>
+                    return 
+                    <option value={el} key={el}>{el}({quiz.filter(e=> el===e.type).length}문제)</option>
                   })
                 }
                 </select>

@@ -109,7 +109,7 @@ function Detail({userName,quizList}) {
         </div>
         </>
         }
-        {/* 1.전체문제가 출력되어야한다. 전체문제가 출력되는건   const [quizList, setquizList] = useState(QuizList);에서 quizList에 지금 QuizList 가 있으니까 얘를 출력시켜주면될 것 같은데...*/}
+   
         </div>
         
       </div>
@@ -117,4 +117,3 @@ function Detail({userName,quizList}) {
     </>
   )
 }
-   {/* <span onClick={()=>{setCurrent(current+1)}}>문제 진행중{current}</span>  */}
